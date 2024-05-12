@@ -1,5 +1,6 @@
 CMakeFiles/main.dir/src/main.c.obj: \
  D:\A_My_project\C\ project\C_homework_xlab\algebra\src\main.c \
+ D:/A_MY_P~1/CPROJE~1/C_HOME~1/algebra/inc/algebra.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
@@ -13,4 +14,4 @@ CMakeFiles/main.dir/src/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
- D:/A_MY_P~1/CPROJE~1/C_HOME~1/algebra/inc/algebra.h
+ C:/mingw64/x86_64-w64-mingw32/include/math.h

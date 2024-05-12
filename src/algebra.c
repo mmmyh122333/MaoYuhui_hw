@@ -17,6 +17,7 @@ Matrix add_matrix(Matrix a, Matrix b)
     int i,k;
     if(a.rows == b.rows && a.cols == b.cols)
     {
+        m = create_matrix(a.rows,a.cols );
         for(i = 0; i < a.rows; i++)
         {
             for(k = 0; k < a.cols; k++ )
@@ -37,6 +38,7 @@ Matrix sub_matrix(Matrix a, Matrix b)
     int i,k;
     if(a.rows == b.rows && a.cols == b.cols)
     {
+        m = create_matrix(a.rows,a.cols);
         for(i = 0; i < a.rows; i++)
         {
             for(k = 0; k < a.cols; k++ )
@@ -54,18 +56,21 @@ Matrix mul_matrix(Matrix a, Matrix b)
 {
     // ToDo
     Matrix m;//
-    Matrix m2;//过渡矩阵
+    // Matrix m2;//过渡矩阵
+    double m2;
     int i , k ,j;
     if(a.cols == b.rows)
     {
+        m = create_matrix(a.rows,b.cols);
         for(i = 0; i < a.rows ;i++)
         {
             for(j = 0; j < b.cols; j++)
             {
                 for(k = 0; k < a.cols; k++)
                 {
-                    m2.data[i][j] = a.data[i][k] + b.data[k][j];
-                    m.data[i][j] = m.data[i][j] + m2.data[i][j]; 
+                    m2 = a.data[i][k] + b.data[k][j];
+                    m.data[i][j] = m.data[i][j] + m2;
+                    m2 = 0;   
                 }
             }
         }
@@ -80,7 +85,7 @@ Matrix mul_matrix(Matrix a, Matrix b)
 Matrix scale_matrix(Matrix a, double k)
 {
     // ToDo
-    Matrix m;
+    Matrix m = create_matrix(a.rows,a.cols);
     int i, j;
     for(i = 0; i < a.rows; i++){
         for(j = 0; j < a.cols; j++){
@@ -93,7 +98,7 @@ Matrix scale_matrix(Matrix a, double k)
 Matrix transpose_matrix(Matrix a)
 {
     // ToDo
-    Matrix m;
+    Matrix m = create_matrix(a.cols,a.rows);
     int i, j;
     for(i = 0; i < a.rows; i++){
         for(j = 0;j < a.cols; j++){
@@ -130,7 +135,7 @@ int rank_matrix(Matrix a)
 double trace_matrix(Matrix a)
 {
     // ToDo
-    int trace = 0;
+    double trace = 0;
     int i;
     if(a.cols == a.rows)
     {
