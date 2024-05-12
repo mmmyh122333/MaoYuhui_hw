@@ -43,7 +43,7 @@ Matrix sub_matrix(Matrix a, Matrix b)
         {
             for(k = 0; k < a.cols; k++ )
             {
-                m.data[i][k] = b.data[i][k] - a.data[i][k]; 
+                m.data[i][k] = a.data[i][k] - b.data[i][k]; 
             }
         }
         return m;
@@ -68,7 +68,7 @@ Matrix mul_matrix(Matrix a, Matrix b)
             {
                 for(k = 0; k < a.cols; k++)
                 {
-                    m2 = a.data[i][k] + b.data[k][j];
+                    m2 = a.data[i][k] * b.data[k][j];
                     m.data[i][j] = m.data[i][j] + m2;
                     m2 = 0;   
                 }
@@ -145,6 +145,7 @@ double trace_matrix(Matrix a)
         }
         return trace;
     }
+    else printf("Error: The matrix must be a square matrix.\n");
     return 0;
 }
 
