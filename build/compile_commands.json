@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/A_My_project/C project/C_homework_xlab/algebra/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -o CMakeFiles\\main.dir\\src\\algebra.c.obj -c \"D:\\A_My_project\\C project\\C_homework_xlab\\algebra\\src\\algebra.c\"",
+  "file": "D:/A_My_project/C project/C_homework_xlab/algebra/src/algebra.c",
+  "output": "CMakeFiles/main.dir/src/algebra.c.obj"
+},
+{
+  "directory": "D:/A_My_project/C project/C_homework_xlab/algebra/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/main.dir/includes_C.rsp -g -o CMakeFiles\\main.dir\\src\\main.c.obj -c \"D:\\A_My_project\\C project\\C_homework_xlab\\algebra\\src\\main.c\"",
+  "file": "D:/A_My_project/C project/C_homework_xlab/algebra/src/main.c",
+  "output": "CMakeFiles/main.dir/src/main.c.obj"
+}
+]

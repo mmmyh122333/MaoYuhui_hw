@@ -1,0 +1,3 @@
+D:/A_My_project/C project/C_homework_xlab/algebra/build/CMakeFiles/main.dir
+D:/A_My_project/C project/C_homework_xlab/algebra/build/CMakeFiles/edit_cache.dir
+D:/A_My_project/C project/C_homework_xlab/algebra/build/CMakeFiles/rebuild_cache.dir
